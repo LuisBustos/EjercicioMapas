@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		704BBDFD2657502100B62CE2 /* MapKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704BBDFC2657502100B62CE2 /* MapKitExtensions.swift */; };
 		706A016C265034EC000CC171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706A016B265034EC000CC171 /* AppDelegate.swift */; };
 		706A016E265034EC000CC171 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706A016D265034EC000CC171 /* SceneDelegate.swift */; };
 		706A0170265034EC000CC171 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706A016F265034EC000CC171 /* ViewController.swift */; };
 		706A0173265034EC000CC171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 706A0171265034EC000CC171 /* Main.storyboard */; };
 		706A0175265034EE000CC171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 706A0174265034EE000CC171 /* Assets.xcassets */; };
 		706A0178265034EE000CC171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 706A0176265034EE000CC171 /* LaunchScreen.storyboard */; };
+		706A018126503526000CC171 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706A018026503526000CC171 /* MapKit.framework */; };
+		706A01832650358E000CC171 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706A01822650358E000CC171 /* CoreLocation.framework */; };
+		706A01862650364F000CC171 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 706A01852650364F000CC171 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		704BBDFC2657502100B62CE2 /* MapKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitExtensions.swift; sourceTree = "<group>"; };
 		706A0168265034EC000CC171 /* EjercicioMapas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjercicioMapas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		706A016B265034EC000CC171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		706A016D265034EC000CC171 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,8 @@
 		706A0174265034EE000CC171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		706A0177265034EE000CC171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		706A0179265034EE000CC171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		706A018026503526000CC171 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		706A01822650358E000CC171 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706A01862650364F000CC171 /* Alamofire in Frameworks */,
+				706A01832650358E000CC171 /* CoreLocation.framework in Frameworks */,
+				706A018126503526000CC171 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,7 @@
 			children = (
 				706A016A265034EC000CC171 /* EjercicioMapas */,
 				706A0169265034EC000CC171 /* Products */,
+				706A017F26503526000CC171 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,18 @@
 				706A0174265034EE000CC171 /* Assets.xcassets */,
 				706A0176265034EE000CC171 /* LaunchScreen.storyboard */,
 				706A0179265034EE000CC171 /* Info.plist */,
+				704BBDFC2657502100B62CE2 /* MapKitExtensions.swift */,
 			);
 			path = EjercicioMapas;
+			sourceTree = "<group>";
+		};
+		706A017F26503526000CC171 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				706A01822650358E000CC171 /* CoreLocation.framework */,
+				706A018026503526000CC171 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +104,9 @@
 			dependencies = (
 			);
 			name = EjercicioMapas;
+			packageProductDependencies = (
+				706A01852650364F000CC171 /* Alamofire */,
+			);
 			productName = EjercicioMapas;
 			productReference = 706A0168265034EC000CC171 /* EjercicioMapas.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 706A015F265034EC000CC171;
+			packageReferences = (
+				706A01842650364F000CC171 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 706A0169265034EC000CC171 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +167,7 @@
 				706A0170265034EC000CC171 /* ViewController.swift in Sources */,
 				706A016C265034EC000CC171 /* AppDelegate.swift in Sources */,
 				706A016E265034EC000CC171 /* SceneDelegate.swift in Sources */,
+				704BBDFD2657502100B62CE2 /* MapKitExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EjercicioMapas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EjercicioMapas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		706A01842650364F000CC171 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		706A01852650364F000CC171 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A01842650364F000CC171 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 706A0160265034EC000CC171 /* Project object */;
 }
